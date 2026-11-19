@@ -1,0 +1,8 @@
+services:
+  demo:
+    image: python:3.14-slim
+    working_dir: /demo
+    command: ["python", "-B", "demo.py"]
+    volumes:
+      - .:/demo:ro
+    network_mode: none
